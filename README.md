@@ -9,6 +9,8 @@
 This repository contains the source code for a custom, full-stack web application built to meet the specific requirements of a commercial client.
 
 The project features a modern, responsive frontend built with TypeScript and Tailwind CSS.
+> **🌐 Live Deployment:** You can check out the live version of the application here:
+> [https://bot-coin-ozxc53pft-hajdu-patriks-projects.vercel.app](tyoh-website-ts.vercel.app)
 
 ---
 
