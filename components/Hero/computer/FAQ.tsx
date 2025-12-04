@@ -17,6 +17,8 @@ const FAQ: React.FC = () => {
     placeholder: undefined,
     onPointerEnterCapture: undefined,
     onPointerLeaveCapture: undefined,
+    onResize: undefined,
+    onResizeCapture: undefined,
   };
 
   return (
@@ -32,11 +34,13 @@ const FAQ: React.FC = () => {
               key={faq.id}
               draggable="false"
               className="questionanimation mb-[1vw] flex flex-col items-start rounded-2xl bg-[#342B22] px-[1vw] py-[0.5vw] font-[450] sm:mb-[0.5vw] sm:items-stretch"
+              {...fixTypes}
             >
+              {/* Kérdés */}
               <AccordionHeader
                 onClick={() => handleOpen(faq.id)}
                 className="ml-[4vw] flex w-full items-center justify-between py-[1vw] text-[5vw] font-[600] sm:py-[0.32vw] sm:text-[1.5vw] lg:text-[1.2vw] bg:ml-[1.25vw]"
-                {...fixTypes} // Itt is
+                {...fixTypes}
               >
                 <div className=" shadowmobile | mr-auto text-left sm:mr-0">{faq.question}</div>
                 <span className="ml-auto mr-[0.5vw] sm:mr-0">
@@ -47,8 +51,10 @@ const FAQ: React.FC = () => {
                   )}
                 </span>
               </AccordionHeader>
+              {/* Válasz */}
               <AccordionBody 
                 className=" my-[2vw] rounded-lg px-[2vw] text-justify text-[4vw] font-[300] sm:text-[1.6vw] lg:text-[1.05vw] bg:my-[0.5vw] bg:px-[0.5vw]"
+                {...fixTypes}
               >
                 <span>{faq.answer}</span>
               </AccordionBody>
