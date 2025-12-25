@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Portfolio_Demo-lightgrey?style=flat)
 ![License](https://img.shields.io/badge/License-Proprietary-red?style=flat)
 
-# Custom Web Application for TYOH
+# Custom Website for TYOH
 
 This repository contains the source code for a custom, full-stack web application built to meet the specific requirements of a commercial client (The Yard of Horror).
 
