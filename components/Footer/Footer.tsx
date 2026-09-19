@@ -1,3 +1,5 @@
+import { Button } from "../ui/Button";
+
 const Footer: React.FC = () => {
   return (
     <footer className=" shadowmobile | footeranimation flex flex-col items-center py-2 sm:flex-row sm:justify-between sm:space-y-0">
@@ -8,12 +10,13 @@ const Footer: React.FC = () => {
         </abbr>
         - All rights reserved
       </div>
-      <a
+      <Button
+        as="a"
+        variant="footerLink"
         href="mailto:theyardofhorror@gmail.com"
-        className="px-2 text-[4vw] font-extralight hover:underline sm:mr-24 sm:text-[1.5vw] md:mr-32"
       >
         Contact Us
-      </a>
+      </Button>
     </footer>
   );
 };

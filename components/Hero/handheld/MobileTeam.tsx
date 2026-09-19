@@ -33,8 +33,8 @@ const MobileTeam: React.FC = () => {
             <div
               className={
                 index === current
-                  ? "scale-[1.025] opacity-[1] duration-1000"
-                  : "opacity-0 duration-1000 ease-in"
+                  ? "scale-[1.025] opacity-[1] transition-[transform,opacity] duration-1000"
+                  : "opacity-0 transition-[transform,opacity] duration-1000 ease-in"
               }
               key={index}
             >
@@ -45,6 +45,7 @@ const MobileTeam: React.FC = () => {
                     alt={slide.alt}
                     width={300}
                     height={300}
+                    sizes="(min-width: 640px) 0px, 80vw"
                     draggable="false"
                     className="box relative z-10 h-[80vw] w-[80vw] object-contain"
                   />

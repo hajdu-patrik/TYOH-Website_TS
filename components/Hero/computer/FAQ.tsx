@@ -16,9 +16,9 @@ const FAQ: React.FC = () => {
   return (
     <section className=" shadowmobile | mb-[1vw] flex flex-col">
       <div className=" mx-auto max-w-[90vw] overflow-hidden rounded-[3.5vw] px-[0.5vw] pb-[0.5vw] sm:max-w-[80vw] ">
-        <h1 className=" mb-[5vw] text-center text-[6vw] font-bold tracking-[0.15vw] sm:mb-[2vw] sm:text-[2vw]">
+        <h2 className=" mb-[5vw] text-center text-[6vw] font-bold tracking-[0.15vw] sm:mb-[2vw] sm:text-[2vw]">
           Frequently Asked Questions
-        </h1>
+        </h2>
         <>
           {Faqs.map((faq) => (
             <Accordion

@@ -36,7 +36,7 @@ layer(base);
 @utility navanimation {
   /* Navbar */
   /* Hrefs */
-  @apply transition duration-300 ease-in-out hover:scale-110;
+  @apply transition-transform duration-300 ease-in-out hover:scale-110;
   text-shadow: 0px 0px 22px var(--boxshadow25);
   &:hover {
     text-shadow: 0px 0px 40px var(--boxshadow50);
@@ -69,10 +69,10 @@ layer(base);
 @utility box {
   /* Team */
   /* transition: box-shadow 0.3s; */
-  @apply scale-100 transition duration-300 ease-in-out;
+  @apply scale-100 transition-[transform,filter] duration-300 ease-in-out;
   &:hover {
     filter: drop-shadow(0px 0px 22px var(--boxshadow50));
-    @apply scale-[1.07] transition duration-300 ease-in-out;
+    @apply scale-[1.07] transition-[transform,filter] duration-300 ease-in-out;
   }
 }
 
@@ -138,6 +138,10 @@ layer(base);
   }
   body {
     background-image: url("../public/artworkmobile.png");
+    background-image: image-set(
+      url("/artworkmobile.avif") type("image/avif"),
+      url("/artworkmobile.webp") type("image/webp")
+    );
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 100% !important;
@@ -145,10 +149,29 @@ layer(base);
   @media (min-width: 640px) {
     body {
       background-image: url("../public/artwork.png");
+      background-image: image-set(
+        url("/artwork.avif") type("image/avif"),
+        url("/artwork.webp") type("image/webp")
+      );
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 100% !important;
     }
+  }
+}
+
+/*
+  Respect the visitor's OS-level reduced-motion preference. Purely additive:
+  browsers/users that do not request reduced motion are completely unaffected.
+*/
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 

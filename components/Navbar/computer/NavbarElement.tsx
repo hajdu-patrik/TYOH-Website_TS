@@ -1,5 +1,6 @@
 import { Hrefs } from "../handheld/DropdownItem";
 import React from "react";
+import { Button } from "../../ui/Button";
 const NavbarElement: React.FC = () => {
   return (
     <>
@@ -9,9 +10,9 @@ const NavbarElement: React.FC = () => {
             return (
               <React.Fragment key={item.id}>
                 <a href={item.href} target="_blank">
-                  <li className="  shadowmobile | navanimation p-2 transition-transform">
+                  <Button as="li" variant="navDesktop">
                     {item.name}
-                  </li>
+                  </Button>
                 </a>
               </React.Fragment>
             );

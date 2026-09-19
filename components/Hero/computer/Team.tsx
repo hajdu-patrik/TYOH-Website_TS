@@ -22,6 +22,7 @@ const Team: React.FC = () => {
                     alt={slide.alt}
                     width={400}
                     height={524}
+                    sizes="(min-width: 640px) 25vw, 0px"
                     draggable="false"
                     className="box h-[25vw] w-[25vw] object-contain"
                   />
