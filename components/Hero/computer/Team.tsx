@@ -9,7 +9,7 @@ const Team: React.FC = () => {
   return (
     <>
       <section className=" shadowmobile | hidden min-h-[50vw] flex-col bg:flex">
-        <h1 className="mb-[5vw] text-center text-[6vw] font-[700] tracking-[0.15vw] bg:mb-[2vw] bg:text-[2vw]">
+        <h1 className="mb-[5vw] text-center text-[6vw] font-bold tracking-[0.15vw] bg:mb-[2vw] bg:text-[2vw]">
           Team
         </h1>
         <div className="hidden h-full items-center justify-center bg:flex select-none ">

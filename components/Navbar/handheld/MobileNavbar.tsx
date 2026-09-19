@@ -20,14 +20,14 @@ const MobileNavbar: React.FC = () => {
           open
             ? "floating absolute bottom-0 m-0 min-h-screen w-[75%] p-5 pt-10"
             : "h-screen w-0"
-        } absolute inset-0 bg-[#1b282b] pt-5 opacity-[97%] shadow-2xl shadow-[#005B61] duration-300`}
+        } absolute inset-0 bg-[#1b282b] pt-5 opacity-97 shadow-2xl shadow-[#005B61] duration-300`}
         ref={menuRef}
       >
         <button onClick={handleSidebarButton}>
           {!open ? (
-            <Bars3Icon className="ml-5 mt-2 h-8 w-8 font-[800]" />
+            <Bars3Icon className="ml-5 mt-2 h-8 w-8 font-extrabold" />
           ) : (
-            <XMarkIcon className="mt-2 ml-4 h-8 w-8 font-[800]" />
+            <XMarkIcon className="mt-2 ml-4 h-8 w-8 font-extrabold" />
           )}
         </button>
         <ul
@@ -41,7 +41,7 @@ const MobileNavbar: React.FC = () => {
                     href={item.href}
                     className=" shadowmobile | navanimation mb-2 flex items-center border-none py-2 px-4 text-xl"
                   >
-                    <span className="font-[700] italic">{item.name}</span>
+                    <span className="font-bold italic">{item.name}</span>
                   </a>
                 </React.Fragment>
               );

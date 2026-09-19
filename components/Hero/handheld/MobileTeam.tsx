@@ -21,11 +21,11 @@ const MobileTeam: React.FC = () => {
     <section className="mt-[230vw] flex min-h-[160vw] flex-col bg:hidden">
       <div className="relative flex items-center justify-center">
         <ArrowSmallLeftIcon
-          className="s:h-13 s:w-13 absolute top-[40%] left-1 z-10 h-9 w-9 select-none font-[100] text-white selection:cursor-pointer hover:text-stone-400 s:left-4"
+          className="absolute top-[40%] left-1 z-10 h-9 w-9 select-none font-thin text-white selection:cursor-pointer hover:text-stone-400 s:left-4"
           onClick={prevSlide}
         />
         <ArrowSmallRightIcon
-          className="s:h-13 s:w-13 absolute top-[40%] right-1 z-10 h-9 w-9 select-none rounded-xl text-white selection:cursor-pointer hover:text-stone-400 s:right-4"
+          className="absolute top-[40%] right-1 z-10 h-9 w-9 select-none rounded-xl text-white selection:cursor-pointer hover:text-stone-400 s:right-4"
           onClick={nextSlide}
         />
         {SliderData.map((slide, index) => {
