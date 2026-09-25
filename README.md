@@ -1,11 +1,11 @@
+# Custom Website for TYOH
+
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=flat&logo=next.js&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?style=flat&logo=vercel&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Portfolio_Demo-lightgrey?style=flat)
 ![License](https://img.shields.io/badge/License-Proprietary-red?style=flat)
-
-# Custom Website for TYOH
 
 This repository contains the source code for a custom, full-stack web application built to meet the specific requirements of a commercial client (The Yard of Horror).
 
@@ -49,3 +49,11 @@ Any push to the `main` branch automatically triggers a new build and deployment.
 | Environment | Status |
 | :--- | :--- |
 | **Production** | [![Vercel App](https://img.shields.io/badge/Visit-Live_App-success?style=for-the-badge&logo=vercel)](https://tyoh-zeta.vercel.app) |
+
+---
+
+## 📄 License
+
+Copyright (c) Hajdú Patrik Zsolt. All rights reserved.
+
+Proprietary, commissioned work published for demonstration and portfolio purposes only. No rights to use, copy, modify or distribute it are granted. See [LICENSE.md](LICENSE.md) for the full terms.

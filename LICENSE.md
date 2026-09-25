@@ -1,7 +1,7 @@
 # Proprietary License & Commissioned Work Notice
 
 Copyright (c) Hajdú Patrik Zsolt
-All Rights Reserved
+All rights reserved.
 
 ## 1. Project Status
 
@@ -11,7 +11,7 @@ All intellectual property rights, copyrights, and other rights related to this p
 
 ## 2. Purpose of Publication
 
-This repository is published for **demonstration and portfolio purposes only**. It is intended to showcase the developer's skills in technologies such as TypeScript, Java, Tailwind CSS, and full-stack web development.
+This repository is published for **demonstration and portfolio purposes only**. It is intended to showcase the developer's skills in technologies such as TypeScript, Next.js, Tailwind CSS, and full-stack web development.
 
 ## 3. Strict Prohibitions
 
